@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "/action" > PATH | grep -r  "/action" PATH 
+echo "/action" > PATH | $PATH:/action 
