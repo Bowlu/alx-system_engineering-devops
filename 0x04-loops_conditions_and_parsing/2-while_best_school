@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Bash script using while loop
+
+
+i=0
+
+while [ $i -lt 10 ]
+do
+  echo "Best School"
+  ((i++))
+done
