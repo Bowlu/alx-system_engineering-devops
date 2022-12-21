@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# connecting to a server without typing a password
+
+Host ${54.144.45.203}
+IdentityFile ~/.ssh/school
+PasswordAuthentication no
+HashKnownHosts yes
