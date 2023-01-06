@@ -2,4 +2,5 @@
 
 # Setting up an apache environment
 
+echo "ServerName localhost" >> /etc/apache2.conf
 sudo service apache2 start
