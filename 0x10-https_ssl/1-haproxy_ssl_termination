@@ -41,7 +41,7 @@ frontend tade.tech-http-frontend
 
 
 frontend  tade.tech-https-frontend
-	bind *:443 ssl crt /etc/letsencrypt/live/www.tade.tech.tech/fullchain.pem
+	bind *:443 ssl crt /etc/letsencrypt/live/www.tade.tech/fullchain.pem
         default_backend nginx_webservers
 
 
