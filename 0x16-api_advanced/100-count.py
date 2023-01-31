@@ -45,12 +45,14 @@ def count_words(subreddit, word_list, histogram=[], n=0, after=None):
             'Edg/97.0.1072.62'
         ])
     }
+    sort = 'hot'
+    limit = 30
     res = requests.get(
         '{}/r/{}/.json?sort={}&limit={}&count={}&after={}'.format(
             'https://www.reddit.com',
             subreddit,
-            'hot',
-            30,
+            sort,
+            limit,
             n,
             after if after else ''
         ),
@@ -71,7 +73,7 @@ def count_words(subreddit, word_list, histogram=[], n=0, after=None):
             )))),
             histogram
         ))
-        if len(posts) >= 30 and data['after']:
+        if len(posts) >= limit and data['after']:
             count_words(
                 subreddit,
                 word_list,
